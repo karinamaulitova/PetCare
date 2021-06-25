@@ -1,0 +1,23 @@
+@use "~@fontsource/montserrat/scss/mixins" as Montserrat;
+@import '~normalize.css/normalize.css';
+
+
+@include Montserrat.fontFace(
+  $weight: 400,
+  $fontDir: "~@fontsource/montserrat/files"
+);
+
+@include Montserrat.fontFace(
+  $weight: 500,
+  $fontDir: "~@fontsource/montserrat/files"
+);
+
+@include Montserrat.fontFace(
+  $weight: 600,
+  $fontDir: "~@fontsource/montserrat/files"
+);
+
+.test {
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
