@@ -1,0 +1,20 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: $desktop-gap;
+
+  max-width: $desktop-container-width;
+  margin: 0 auto;
+}
+
+@include atMobile {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: $mobile-gap;
+
+    max-width: $mobile-container-width;
+  }
+}

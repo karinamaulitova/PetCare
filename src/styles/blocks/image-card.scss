@@ -1,0 +1,83 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.image-card {
+  background: $dark-grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  position: relative;
+
+  box-shadow: 0px 0px 10px $box-shadow-black;
+  border-radius: 40px;
+
+  color: $white;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 630px;
+  box-sizing: border-box;
+  padding: 315px 0 100px;
+
+  &::before {
+    content: '';
+    background: linear-gradient(180deg, $black 0%, $dark-grey 100%);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+  }
+
+  &_bg {
+    &_dog {
+      background-image: url('../images/background-dog.jpg');
+      background-size: 140%;
+
+      cursor: pointer;
+    }
+    &_cat {
+      background-image: url('../images/background-cat.jpg');
+    }
+  }
+
+  &__info {
+    padding: 64px 0 0 40px;
+    z-index: 1;
+  }
+
+  &__heading {
+    font-weight: $medium;
+    font-size: 32px;
+    line-height: 39px;
+
+    margin: 0;
+  }
+
+  &__text {
+    font-weight: $regular;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px 0 0 0;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $dark-grey;
+    text-decoration: none;
+    color: $white;
+    padding: 20px 0 20px 40px;
+    margin: 0;
+  }
+
+  &__arrow {
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.navigation {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: $medium;
+    font-size: 23px;
+    line-height: 28px;
+    color: $dark-grey;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

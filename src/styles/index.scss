@@ -1,23 +1,17 @@
-@use "~@fontsource/montserrat/scss/mixins" as Montserrat;
 @import '~normalize.css/normalize.css';
-
-
-@include Montserrat.fontFace(
-  $weight: 400,
-  $fontDir: "~@fontsource/montserrat/files"
-);
-
-@include Montserrat.fontFace(
-  $weight: 500,
-  $fontDir: "~@fontsource/montserrat/files"
-);
-
-@include Montserrat.fontFace(
-  $weight: 600,
-  $fontDir: "~@fontsource/montserrat/files"
-);
-
-.test {
-    font-size: 40px;
-    font-family: 'Montserrat';
-}
+@import './fonts.scss';
+@import './blocks/page.scss';
+@import './blocks/grid.scss';
+@import './blocks/header.scss';
+@import './blocks/logo.scss';
+@import './blocks/navigation.scss';
+@import './blocks/social.scss';
+@import './blocks/content.scss';
+@import './blocks/banner.scss';
+@import './blocks/cards.scss';
+@import './blocks/image-card.scss';
+@import './blocks/text-card.scss';
+@import './blocks/flip.scss';
+@import './blocks/benefits.scss';
+@import './blocks/footer.scss';
+@import './blocks/popup.scss';

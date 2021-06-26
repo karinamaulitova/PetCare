@@ -1,0 +1,96 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.banner {
+  background: $blue;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 600px;
+  
+  clip-path: ellipse(150% 932px at 50% -332px);
+
+  &__container {
+    padding: 60px 0 0;
+  }
+
+  &_type_dog {
+    background: linear-gradient(to right top, $light-blue 0%, $white 100%);
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/7;
+    grid-row: 1;
+    margin-top: 45px;
+
+    color: $light-blue;
+
+    &_type_dog {
+      color: $blue;
+      grid-column: 1/8;
+    }
+  }
+
+  &__heading {
+    font-weight: $semi-bold;
+    font-size: 50px;
+    line-height: 61px;
+
+    margin: 0;
+  }
+
+  &__text {
+    font-weight: $medium;
+    font-size: 30px;
+    line-height: 37px;
+
+    &_type_dog {
+      max-width: 550px;
+    }
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    position: relative;
+    grid-column: 8/12;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+
+    &_type_dog {
+        left: -220px;
+        max-width: 200%;
+        top: -40px;
+    }
+  }
+
+  &__price {
+    font-weight: $semi-bold;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &__button {
+    align-self: flex-start;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    border: none;
+
+    background: linear-gradient(90deg, $light-blue 0%, $violet 100%);
+    border-radius: 40px;
+
+    color: $white;
+    font-weight: $medium;
+    font-size: 22px;
+    line-height: 27px;
+
+    &_type_dog {
+      background: $blue;
+    }
+  }
+}

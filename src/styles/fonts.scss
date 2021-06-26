@@ -1,0 +1,16 @@
+@use "~@fontsource/montserrat/scss/mixins" as Montserrat;
+
+@include Montserrat.fontFace(
+  $weight: 400,
+  $fontDir: '~@fontsource/montserrat/files'
+);
+
+@include Montserrat.fontFace(
+  $weight: 500,
+  $fontDir: '~@fontsource/montserrat/files'
+);
+
+@include Montserrat.fontFace(
+  $weight: 600,
+  $fontDir: '~@fontsource/montserrat/files'
+);

@@ -1,0 +1,41 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.footer {
+  &__container {
+    align-items: center;
+    padding: 50px 0 45px;
+
+    color: $blue;
+  }
+
+  &__contacts-wrapper {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact {
+    font-weight: $medium;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+
+    color: $blue;
+  }
+
+  &__text-wrapper {
+    grid-column: 5/9;
+  }
+
+  &__text {
+    font-weight: $regular;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__logo-link {
+    grid-column: 9/-1;
+    justify-self: flex-end;
+  }
+}

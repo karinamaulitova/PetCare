@@ -1,0 +1,24 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.benefits {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: $regular;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__icon {
+      flex-shrink: 0;
+      margin-right: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &__text {
+    font-weight: $semi-bold;
+    font-size: 28px;
+    line-height: 34px;
+    color: $dark-grey;
+    margin: 0 0 0 20px;
+  }
+}

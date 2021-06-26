@@ -1,0 +1,31 @@
+.flip {
+  perspective: 600px;
+
+  &__wrapper {
+    transition: transform 500ms;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  &:hover  &__wrapper {
+    transform: rotateY(180deg);
+   }
+
+   &:hover &__front {
+    pointer-events: none;
+   }
+
+  &__front {
+    backface-visibility: hidden;
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+}
+

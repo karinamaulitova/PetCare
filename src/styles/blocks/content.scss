@@ -1,0 +1,14 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.content {
+    &__main-heading_type_hidden {
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    &__slider {
+        margin-bottom: 70px;
+    }
+}

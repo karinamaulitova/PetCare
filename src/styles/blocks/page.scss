@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.page {
+    background-color: $white;
+    font-family: $font-family;
+    min-height: 100vh;
+
+    &__main {
+      margin-bottom: 70px;
+    }
+  }
