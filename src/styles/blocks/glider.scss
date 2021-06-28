@@ -21,6 +21,8 @@
 
     background: $white;
 
+    cursor: pointer;
+
     &_type {
       &_prev {
         grid-column: 1;
@@ -60,7 +62,7 @@
     &__dots {
       display: flex;
 
-       button {
+      & button {
         background: $light-blue;
 
         &.active {

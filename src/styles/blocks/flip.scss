@@ -7,23 +7,25 @@
     transition: transform 500ms;
     transform-style: preserve-3d;
     position: relative;
+    transform: rotateY(180deg);
   }
 
-  &:hover  &__wrapper, 
-  &:focus-within  &__wrapper {
-    transform: rotateY(180deg);
-   }
+  &:hover &__wrapper,
+  &:focus-within &__wrapper {
+    transform: rotateY(0deg);
+  }
 
-   &:hover &__front,
-   &:focus-within &__front {
+  &:hover &__back,
+  &:focus-within &__back {
     pointer-events: none;
-   }
+  }
 
   &__front {
     backface-visibility: hidden;
   }
 
   &__back {
+    backface-visibility: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -34,6 +36,9 @@
 }
 
 @include atMobile {
-  
+  .flip {
+    &__wrapper {
+      transform: rotateY(0deg);
+    }
+  }
 }
-

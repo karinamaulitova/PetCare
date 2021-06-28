@@ -60,14 +60,38 @@
   }
 
   &__close-button {
-      background: transparent;
-      border: none;
-      position: absolute;
-      top: 31px;
-      right: 24px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 31px;
+    right: 24px;
 
-      &:hover {
-        opacity: 0.5;
-      }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@include atMobile {
+  .popup {
+    &__container {
+      max-width: $mobile-container-width;
+      padding: 40px 20px 24px;
+      border-radius: 24px;
+    }
+
+    &__form {
+      margin-top: 24px;
+    }
+
+    &__heading {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__close-button {
+      top: 15px;
+      right: 8px;
+    }
   }
 }

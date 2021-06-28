@@ -133,7 +133,8 @@
                                         нами</a>
                                 </div>
                                 <div class="banner__image-wrapper">
-                                    <img class="banner__image banner__image_type_cat" src="<%= require('./images/cat.png') %>" alt="кот">
+                                    <img class="banner__image banner__image_type_cat"
+                                        src="<%= require('./images/cat.png') %>" alt="кот">
                                 </div>
                             </div>
                         </section>
@@ -184,20 +185,7 @@
                     <li class="cards__item">
                         <div class="cards__item-content flip">
                             <div class="flip__wrapper">
-                                <div class="image-card image-card_bg_dog flip__front">
-                                    <div class="image-card__info">
-                                        <h2 class="image-card__heading">
-                                            Сколько стоит онлайн-консультация с терапевтом?
-                                        </h2>
-                                        <svg class="image-card__arrow" width="231" height="16" viewBox="0 0 231 16"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M230.707 8.70711C231.098 8.31658 231.098 7.68342 230.707 7.29289L224.343 0.928932C223.953 0.538408 223.319 0.538408 222.929 0.928932C222.538 1.31946 222.538 1.95262 222.929 2.34315L228.586 8L222.929 13.6569C222.538 14.0474 222.538 14.6805 222.929 15.0711C223.319 15.4616 223.953 15.4616 224.343 15.0711L230.707 8.70711ZM0 9H230V7H0V9Z"
-                                                fill="white" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-card flip__back">
+                                <div class="text-card flip__front">
                                     <h2 class="text-card__heading">
                                         Онлайн-консультация с терапевтом
                                     </h2>
@@ -238,6 +226,19 @@
                                         </li>
                                     </ul>
                                     <button class="text-card__button" type="button">Начать консультацию</button>
+                                </div>
+                                <div class="image-card image-card_bg_dog flip__back">
+                                    <div class="image-card__info">
+                                        <h2 class="image-card__heading">
+                                            Сколько стоит онлайн-консультация с терапевтом?
+                                        </h2>
+                                        <svg class="image-card__arrow" width="231" height="16" viewBox="0 0 231 16"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M230.707 8.70711C231.098 8.31658 231.098 7.68342 230.707 7.29289L224.343 0.928932C223.953 0.538408 223.319 0.538408 222.929 0.928932C222.538 1.31946 222.538 1.95262 222.929 2.34315L228.586 8L222.929 13.6569C222.538 14.0474 222.538 14.6805 222.929 15.0711C223.319 15.4616 223.953 15.4616 224.343 15.0711L230.707 8.70711ZM0 9H230V7H0V9Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>

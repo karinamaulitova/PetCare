@@ -19,3 +19,9 @@
 @import './blocks/glider.scss';
 @import './blocks/desktop-grid.scss';
 @import './blocks/mobile-grid.scss';
+
+//make scroll smoth at FF and Chrome
+
+html {
+    scroll-behavior: smooth;
+}
