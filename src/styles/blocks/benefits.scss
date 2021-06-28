@@ -2,7 +2,6 @@
 @import '../mixins.scss';
 
 .benefits {
-  margin: 0;
   padding: 0;
 
   &__item {
@@ -18,7 +17,23 @@
   }
 
   &__icon {
-      flex-shrink: 0;
-      margin-right: 20px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+}
+
+@include atMobile {
+  .benefits {
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+
+      margin-right: 8px;
+    }
   }
 }

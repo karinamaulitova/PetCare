@@ -2,13 +2,21 @@
 @import '../mixins.scss';
 
 .content {
-    &__main-heading_type_hidden {
-        visibility: hidden;
-        font-size: 0;
-        line-height: 0;
-    }
+  &__main-heading_type_hidden {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+  }
 
+  &__glider {
+    margin-bottom: 70px;
+  }
+}
+
+@include atMobile {
+  .content {
     &__glider {
-        margin-bottom: 70px;
+      margin-bottom: 48px;
     }
+  }
 }

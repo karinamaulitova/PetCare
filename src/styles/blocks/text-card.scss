@@ -19,20 +19,70 @@
     font-weight: $semi-bold;
     font-size: 32px;
     line-height: 39px;
+
+    margin: 0;
   }
 
   &__price {
-      color: $light-blue;
-  } 
+    color: $light-blue;
+
+    font-weight: $semi-bold;
+    font-size: 32px;
+    line-height: 39px;
+
+    margin: 24px 0;
+  }
+
+  &__list {
+    margin: 0 0 40px 0;
+  }
 
   &__button {
-      color: $white;
-      background-color: $blue;
+    color: $white;
+    background-color: $blue;
 
-      border-radius: 40px;
-      padding: 15px 45px;
-      box-sizing: border-box;
-      align-self: flex-start;
-      border: none;
+    border-radius: 40px;
+    padding: 15px 45px;
+    box-sizing: border-box;
+    align-self: flex-start;
+    border: none;
+
+    font-weight: $medium;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+@include atMobile {
+  .text-card {
+    min-height: 400px;
+    padding: 32px 20px 40px;
+
+    &__heading {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__price {
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+
+      margin: 8px 0 10px;
+    }
+
+    &__list {
+      margin: 0 0 8px 0;
+    }
+
+    &__button {
+      font-size: 14px;
+      line-height: 17px;
+
+      padding: 15px 30px;
+
+      align-self: center;
+    }
   }
 }

@@ -24,4 +24,46 @@
       opacity: 0.5;
     }
   }
+
+  &__close-button {
+    display: none;
+  }
+}
+
+@include atMobile {
+  .navigation {
+    background: $blue;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &__list {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__item {
+      margin-bottom: 24px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__close-button {
+      display: block;
+
+      background: transparent;
+      border: none;
+
+      position: absolute;
+      top: 30px;
+      right: 32px;
+    }
+
+    &__link {
+      color: $light-blue;
+    }
+  }
 }

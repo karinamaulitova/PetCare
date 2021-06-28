@@ -21,7 +21,7 @@
     line-height: 29px;
     text-decoration: none;
 
-    color: $blue;
+    color: $violet;
 
     &:hover {
       opacity: 0.5;
@@ -42,5 +42,42 @@
     grid-column: 9/-1;
     justify-self: flex-end;
     
+  }
+}
+
+@include atMobile {
+  .footer {
+    row-gap: 30px;
+    
+    &__container {
+      padding: 0 0 50px;
+    }
+
+    &__contacts-wrapper {
+      grid-column: 1/-1;
+      grid-row: 2;
+    }
+
+    &__contact {
+      text-align: center;
+    }
+
+    &__text-wrapper {
+      grid-column: 1/-1;
+      grid-row: 3;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__logo-link {
+      grid-column: 1/-1;
+      grid-row: 1;
+
+      justify-self: center;
+    }
   }
 }

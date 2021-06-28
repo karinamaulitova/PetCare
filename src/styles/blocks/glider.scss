@@ -50,3 +50,23 @@
       display: none;
   }
 }
+
+@include atMobile {
+  .glider {
+    &__button-wrapper{
+      display: none;
+    }
+
+    &__dots {
+      display: flex;
+
+       button {
+        background: $light-blue;
+
+        &.active {
+          background: $blue;
+        }
+      }
+    }
+  }
+}

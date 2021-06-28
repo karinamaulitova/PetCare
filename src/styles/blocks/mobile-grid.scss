@@ -1,11 +1,7 @@
 @import '../mixins.scss';
 
-.grid {
-  @include desktopGrid;
-}
-
 @include atMobile {
-  .grid {
+  .mobile-grid {
     @include mobileGrid;
   }
 }

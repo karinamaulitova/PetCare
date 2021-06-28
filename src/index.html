@@ -41,10 +41,23 @@
                         </svg>
                         <p class="header__logo-text logo__text">PetCare</p>
                     </a>
-                    <button aria-label="Меню" class="header__menu-button" type="button">Открыть меню</button>
+                    <button aria-label="Меню" class="header__menu-button" type="button"><svg
+                            class="header__menu-button-icon" width="32" height="22" viewBox="0 0 32 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H31C31.2652 10 31.5196 10.1054 31.7071 10.2929C31.8946 10.4804 32 10.7348 32 11C32 11.2652 31.8946 11.5196 31.7071 11.7071C31.5196 11.8946 31.2652 12 31 12ZM21 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H21C21.2652 0 21.5196 0.105357 21.7071 0.292893C21.8946 0.48043 22 0.734784 22 1C22 1.26522 21.8946 1.51957 21.7071 1.70711C21.5196 1.89464 21.2652 2 21 2ZM27 22H1C0.734784 22 0.48043 21.8946 0.292893 21.7071C0.105357 21.5196 0 21.2652 0 21C0 20.7348 0.105357 20.4804 0.292893 20.2929C0.48043 20.1054 0.734784 20 1 20H27C27.2652 20 27.5196 20.1054 27.7071 20.2929C27.8946 20.4804 28 20.7348 28 21C28 21.2652 27.8946 21.5196 27.7071 21.7071C27.5196 21.8946 27.2652 22 27 22Z"
+                                fill="#726DA8" />
+                        </svg></button>
 
                 </div>
                 <nav class="header__navigation navigation">
+                    <button aria-label="Закрыть" class="navigation__close-button" type="button"><svg
+                            class="header__close-button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5374 11.9981L23.6775 1.86893C23.8828 1.66362 23.9981 1.38515 23.9981 1.0948C23.9981 0.804438 23.8828 0.525972 23.6775 0.320658C23.4722 0.115344 23.1937 0 22.9033 0C22.613 0 22.3345 0.115344 22.1292 0.320658L12 10.4608L1.87079 0.320658C1.66548 0.115344 1.38701 -2.16333e-09 1.09666 0C0.806299 2.16333e-09 0.527833 0.115344 0.322519 0.320658C0.117205 0.525972 0.00186077 0.804438 0.00186076 1.0948C0.00186076 1.38515 0.117205 1.66362 0.322519 1.86893L10.4626 11.9981L0.322519 22.1273C0.220324 22.2287 0.139209 22.3493 0.0838545 22.4822C0.0284997 22.615 0 22.7575 0 22.9015C0 23.0454 0.0284997 23.1879 0.0838545 23.3208C0.139209 23.4537 0.220324 23.5743 0.322519 23.6756C0.42388 23.7778 0.544472 23.8589 0.677339 23.9143C0.810206 23.9696 0.952719 23.9981 1.09666 23.9981C1.24059 23.9981 1.38311 23.9696 1.51597 23.9143C1.64884 23.8589 1.76943 23.7778 1.87079 23.6756L12 13.5355L22.1292 23.6756C22.2306 23.7778 22.3512 23.8589 22.484 23.9143C22.6169 23.9696 22.7594 23.9981 22.9033 23.9981C23.0473 23.9981 23.1898 23.9696 23.3227 23.9143C23.4555 23.8589 23.5761 23.7778 23.6775 23.6756C23.7797 23.5743 23.8608 23.4537 23.9161 23.3208C23.9715 23.1879 24 23.0454 24 22.9015C24 22.7575 23.9715 22.615 23.9161 22.4822C23.8608 22.3493 23.7797 22.2287 23.6775 22.1273L13.5374 11.9981Z"
+                                fill="#a0d2db" />
+                        </svg></button>
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
                         <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
@@ -109,25 +122,25 @@
             <section class="content__glider glider">
                 <div class="glider__slides-wrapper">
                     <div class="glider__slide">
-                        <section class="content__banner banner banner_type_cat">
-                            <div class="banner__container  grid">
+                        <section class="content__banner banner banner_type_cat mobile-grid">
+                            <div class="banner__container desktop-grid">
                                 <div class="banner__text-wrapper">
                                     <h2 class="banner__heading">Мы заботимся о&nbsp;ваших питомцах</h2>
                                     <p class="banner__text">Записывайтесь в ветклиники
                                         и&nbsp;консультируйтесь с ветеринарным врачом&nbspонлайн
                                     </p>
-                                    <button type="button" class="banner__button banner__button_type_cat">Связаться с
-                                        нами</button>
+                                    <a href="#footer" class="banner__button banner__button_type_cat">Связаться с
+                                        нами</a>
                                 </div>
                                 <div class="banner__image-wrapper">
-                                    <img class="banner__image" src="<%= require('./images/cat.png') %>" alt="кот">
+                                    <img class="banner__image banner__image_type_cat" src="<%= require('./images/cat.png') %>" alt="кот">
                                 </div>
                             </div>
                         </section>
                     </div>
                     <div class="glider__slide">
-                        <section class="content__banner banner banner_type_dog">
-                            <div class="banner__container banner__container_type_dog grid">
+                        <section class="content__banner banner banner_type_dog mobile-grid">
+                            <div class="banner__container banner__container_type_dog desktop-grid">
                                 <div class="banner__text-wrapper banner__text-wrapper_type_dog">
                                     <h2 class="banner__heading">Закажите план заботы</h2>
                                     <p class="banner__text banner__text_type_dog">Регулярная доставка специально
@@ -164,8 +177,6 @@
                     </div>
                 </div>
                 <div role="tablist" class="glider__dots">
-                    <button data-index="0" aria-label="баннер 1" role="tab" class="glider__dot"></button>
-                    <button data-index="1" aria-label="баннер 2" role="tab" class="glider__dot"></button>
                 </div>
             </section>
             <section class="content__cards cards">
@@ -190,7 +201,7 @@
                                     <h2 class="text-card__heading">
                                         Онлайн-консультация с терапевтом
                                     </h2>
-                                    <p class="text-card__price text-card__heading">от 399 ₽</p>
+                                    <p class="text-card__price">от 399 ₽</p>
                                     <ul class="text-card__list benefits">
                                         <li class="benefits__item">
                                             <svg class="benefits__icon" width="56" height="56" viewBox="0 0 56 56"
@@ -248,7 +259,7 @@
                 </ul>
             </section>
         </main>
-        <footer class="page__footer footer">
+        <footer class="page__footer footer" id="footer">
             <div class="footer__container grid">
                 <div class="footer__contacts-wrapper">
                     <a class="footer__contact" href="tel:8800998877">8(800) 999-88-77</a>

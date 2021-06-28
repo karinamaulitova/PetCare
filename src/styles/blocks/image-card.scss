@@ -51,7 +51,7 @@
   }
 
   &__heading {
-    font-weight: $medium;
+    font-weight: $semi-bold;
     font-size: 32px;
     line-height: 39px;
 
@@ -83,5 +83,38 @@
 
   &__arrow {
     margin-top: 35px;
+  }
+}
+
+@include atMobile {
+  .image-card {
+    min-height: 400px;
+    padding: 203px 0 55px;
+
+    &__heading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__info {
+      padding: 40px 0 0 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 8px 0 0 0;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+
+      padding: 10px 0 10px 20px;
+    }
+
+    &__arrow {
+      margin-top: 15px;
+    }
   }
 }

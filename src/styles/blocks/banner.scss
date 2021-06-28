@@ -6,16 +6,19 @@
   box-sizing: border-box;
   overflow: hidden;
   height: 600px;
-  
+
   clip-path: ellipse(150% 932px at 50% -332px);
 
   &__container {
     padding: 60px 0 0;
   }
 
-  &_type_dog {
-    background: linear-gradient(to right top, $light-blue 0%, $white 100%);
+  &_type {
+    &_dog {
+      background: linear-gradient(to right top, $light-blue 0%, $white 100%);
+    }
   }
+
 
   &__text-wrapper {
     display: flex;
@@ -26,9 +29,11 @@
 
     color: $light-blue;
 
-    &_type_dog {
-      color: $blue;
-      grid-column: 1/8;
+    &_type {
+      &_dog {
+        color: $blue;
+        grid-column: 1/8;
+      }
     }
   }
 
@@ -44,14 +49,18 @@
     font-weight: $medium;
     font-size: 30px;
     line-height: 37px;
+    margin: 24px 0 32px;
 
-    &_type_dog {
-      max-width: 550px;
+    &_type {
+      &_dog {
+        max-width: 550px;
+      }
     }
   }
 
   &__image-wrapper {
     width: 100%;
+    height: 100%;
     position: relative;
     grid-column: 8/12;
   }
@@ -61,6 +70,13 @@
     top: 0;
     left: 0;
     max-width: 100%;
+
+    &_type {
+      &_dog {
+        left: -220px;
+        top: -40px;
+      }
+    }
   }
 
   &__price {
@@ -74,6 +90,7 @@
     padding: 15px 50px;
     box-sizing: border-box;
     border: none;
+    text-decoration: none;
 
     background: linear-gradient(90deg, $light-blue 0%, $violet 100%);
     border-radius: 40px;
@@ -85,19 +102,98 @@
 
     cursor: pointer;
 
-    &_type_dog {
-      background: $blue;
+    &_type {
+      &_dog {
+        background: $blue;
 
-      &:hover {
-        opacity: 0.5;
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
+  /* increase specificity to overwrite glider.js style for images */
+  &__image.banner__image_type_dog {
+    max-width: 200%;
+  }
+}
 
-    /* increase specificity to overwrite glider.js style for images */
+@include atMobile {
+  .banner {
+    clip-path: none;
+    height: auto;
+    max-width: 280px;
+    border-radius: 40px;
+
+    &__container {
+      padding: 32px 20px 184px;
+
+      grid-column: 1/-1;
+
+      &_type {
+        &_dog {
+          padding: 32px 20px;
+        }
+      }
+    }
+
+    &__text-wrapper {
+      margin: 0;
+    }
+
+    &__heading {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__text {
+      font-weight: $regular;
+      font-size: 14px;
+      line-height: 17px;
+
+      margin: 14px 0 20px;
+
+      &_type {
+        &_dog {
+          margin: 16px 0;
+        }
+      }
+    }
+
+    &__button {
+      padding: 12px 15px;
+
+      font-weight: $regular;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__price {
+      font-size: 18px;
+      line-height: 22px;
+
+      margin-bottom: 97px;
+    }
+
+    &__image {
+      right: -50px;
+      left: initial;
+
+      &_type {
+        &_dog {
+          left: 90px;
+          top: -200px;
+          right: initial;
+        }
+
+        &_cat {
+          width: 150px;
+        }
+      }
+    }
+
     &__image.banner__image_type_dog {
-      left: -220px;
-      max-width: 200%;
-      top: -40px;
+      max-width: 100%;
+    }
   }
 }

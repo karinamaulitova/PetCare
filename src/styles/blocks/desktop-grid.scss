@@ -1,0 +1,13 @@
+@import '../mixins.scss';
+
+.desktop-grid {
+    @include desktopGrid;
+}
+
+@include atMobile {
+    .desktop-grid {
+        display: initial;
+        margin: initial;
+        max-width: initial;
+    }
+}

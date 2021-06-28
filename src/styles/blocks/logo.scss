@@ -18,3 +18,17 @@
     margin: 0 0 0 20px;
   }
 }
+
+@include atMobile {
+  .logo {
+    &__icon {
+      width: 33px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0 0 0 13px;
+    }
+  }
+}

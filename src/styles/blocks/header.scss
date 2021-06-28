@@ -25,3 +25,51 @@
     grid-column: 11/-1;
   }
 }
+
+@include atMobile {
+  .header {
+    &__container {
+      padding: 32px 0;
+    }
+
+    &__wrapper {
+      flex-direction: row-reverse;
+      grid-column: 1/-1;
+    }
+
+    &__menu-button {
+      display: block;
+
+      border: none;
+      background-color: transparent;
+
+      width: 32px;
+
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &__navigation {
+      display: none;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      z-index: 1;
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &_menu-open &__navigation {
+      display: flex;
+    }
+  }
+}

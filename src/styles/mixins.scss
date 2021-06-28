@@ -1,5 +1,25 @@
+@import './variables.scss';
+
 @mixin atMobile {
-    @media screen and (max-width: 1023px) {
-      @content;
-    }
+  @media screen and (max-width: 1023px) {
+    @content;
   }
+}
+
+@mixin desktopGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: $desktop-gap;
+
+  max-width: $desktop-container-width;
+  margin: 0 auto;
+}
+
+@mixin mobileGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: $mobile-gap;
+
+  max-width: $mobile-container-width;
+  margin: 0 auto;
+}
