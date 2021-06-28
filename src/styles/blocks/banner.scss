@@ -61,12 +61,6 @@
     top: 0;
     left: 0;
     max-width: 100%;
-
-    &_type_dog {
-        left: -220px;
-        max-width: 200%;
-        top: -40px;
-    }
   }
 
   &__price {
@@ -89,8 +83,21 @@
     font-size: 22px;
     line-height: 27px;
 
+    cursor: pointer;
+
     &_type_dog {
       background: $blue;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
+  }
+
+    /* increase specificity to overwrite glider.js style for images */
+    &__image.banner__image_type_dog {
+      left: -220px;
+      max-width: 200%;
+      top: -40px;
   }
 }

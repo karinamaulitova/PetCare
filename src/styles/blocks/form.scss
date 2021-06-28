@@ -1,0 +1,109 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: $regular;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+
+  &__text {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__radio-wrapper {
+    margin: 16px 0 32px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio {
+    visibility: hidden;
+  }
+
+  &__radio-label {
+    margin-right: 40px;
+    padding-left: 36px;
+
+    cursor: pointer;
+    user-select: none;
+
+    display: block;
+    position: relative;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      top: -4px;
+      left: 12px;
+
+      width: 24px;
+      height: 24px;
+
+      border: solid 2px $blue;
+      border-radius: 50px;
+
+      background-color: transparent;
+    }
+  }
+
+  &__text-input-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__text-input {
+    padding: 10px 0;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+
+    border: none;
+    border-bottom: 1px solid $blue;
+
+    font-weight: $regular;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+
+    &::placeholder {
+      color: $blue;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 17px 88px;
+
+    font-weight: $medium;
+    font-size: 22px;
+    line-height: 27px;
+
+    align-self: center;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '~glider-js/glider.css';
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.glider {
+  position: relative;
+
+  &__button-wrapper {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    right: 0;
+  }
+
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+
+    background: $white;
+
+    &_type {
+      &_prev {
+        grid-column: 1;
+      }
+
+      &_next {
+        grid-column: 12;
+      }
+    }
+
+    &.disabled {
+      path {
+        fill: $light-blue;
+      }
+    }
+  }
+
+  &__button-icon {
+    &_type {
+      &_prev {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__dots {
+      display: none;
+  }
+}

@@ -22,6 +22,10 @@
     text-decoration: none;
 
     color: $blue;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__text-wrapper {
@@ -37,5 +41,6 @@
   &__logo-link {
     grid-column: 9/-1;
     justify-self: flex-end;
+    
   }
 }
