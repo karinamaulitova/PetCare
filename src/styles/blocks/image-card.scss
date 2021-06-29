@@ -39,9 +39,16 @@
       background-size: 140%;
 
       cursor: pointer;
+
+      @include retina {
+        background-image: url('../images/background-dog@2x.jpg');
+      }
     }
     &_cat {
       background-image: url('../images/background-cat.jpg');
+      @include retina {
+        background-image: url('../images/background-cat@2x.jpg');
+      }
     }
   }
 

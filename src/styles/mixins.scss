@@ -6,6 +6,18 @@
   }
 }
 
+ @mixin atDesktop1130 {
+   @media screen and (max-width: 1130px) {
+     @content;
+   }
+ }
+
+ @mixin retina {
+   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+     @content;
+   }
+ }
+
 @mixin desktopGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

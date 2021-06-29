@@ -6,6 +6,8 @@
     align-items: center;
     padding: 50px 0 45px;
 
+    row-gap: 32px;
+
     color: $blue;
   }
 
@@ -36,6 +38,7 @@
     font-weight: $regular;
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
   }
 
   &__logo-link {

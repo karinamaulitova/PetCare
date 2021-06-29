@@ -52,6 +52,10 @@
     line-height: 27px;
 
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
