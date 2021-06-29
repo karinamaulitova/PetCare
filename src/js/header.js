@@ -2,12 +2,21 @@ var pageHeader = document.querySelector('.header');
 var menuButton = document.querySelector('.header__menu-button');
 var closeMenuButton = document.querySelector('.navigation__close-button');
 
-menuButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  pageHeader.classList.add('header_menu-open');
-});
+function openMenu(header) {
+  header.classList.add('header_menu-open');
+  document.addEventListener('keydown', (evt) => handleEscClose(evt, header));
+}
 
-closeMenuButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  pageHeader.classList.remove('header_menu-open');
-});
+function closeMenu(header) {
+  header.classList.remove('header_menu-open');
+  document.removeEventListener('keydown', (evt) => handleEscClose(evt, header));
+}
+
+function handleEscClose(evt, header) {
+  if (evt.key === 'Escape') {
+    closeMenu(header);
+  }
+}
+
+menuButton.addEventListener('click', () => openMenu(pageHeader));
+closeMenuButton.addEventListener('click', () => closeMenu(pageHeader));
