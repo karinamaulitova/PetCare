@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const { extendDefaultPlugins } = require('svgo');
 
 module.exports = {
@@ -54,6 +55,12 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
+    new CopyPlugin({
+      patterns:[{
+        from: '**/*',
+        context: './src/public/'
+      }]
+    }),
     new ImageMinimizerPlugin({
       minimizerOptions: {
         plugins: [
